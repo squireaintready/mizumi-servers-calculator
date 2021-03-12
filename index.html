@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='styles.css'>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src='main.js'></script>
+    <title>Samuel Jo's Calculator</title>
+</head>
+
+<body>
+    <div class='container'>
+        <h2 id='heading'>Mizumi Calculator </br>By Samuel Jo</h2>
+        <nav class="navbar-light bg-light">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary">
+                    <input type="radio" id="weekday" autocomplete="off" checked> Weekday
+                </label>
+                <label class="btn btn-secondary">
+                    <input type="radio" id="weekend" autocomplete="off"> Weekend
+                </label>
+                <label class="btn btn-secondary">
+                    <input type="radio" id="refresh" autocomplete="off"> Refresh
+                </label>
+                <label class="btn btn-secondary">
+                    <input type="radio" id="calculate" autocomplete="off"> Calculate
+                </label>
+            </div>
+        </nav>
+
+        <form>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">#BusGirls</span>
+                </div>
+                <input type="text" id="numBG" class='form-control'></input>
+            </div>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">#BusBoys</span>
+                </div>
+                <input type="text" id="numBB" class='form-control'></input>
+            </div>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">#Servers</span>
+                </div>
+                <input type="text" id="numServer" class='form-control'></input>
+            </div>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">#Cash</span>
+                </div>
+                <input type="text" id="numCash" class='form-control'></input>
+            </div>
+        </form>
+
+        <table class="table">
+            <thead class='thead-light'>
+                <tr>
+                    <th></th>
+                    <th>Amount</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Busgirl</th>
+                    <td id='bgCash'></td>
+                    <td id='bgTotal'></td>
+                </tr>
+                <tr>
+                    <th>Busboy</th>
+                    <td id='bbCash'></td>
+                    <td id='bbTotal'></td>
+                </tr>
+                <tr>
+                    <th>Server</th>
+                    <td id='serverCash'></td>
+                    <td id='serverTotal'></td>
+                </tr>
+                <tr>
+                    <th>Samonim</th>
+                    <td id='samonim'></td>
+                    <td id='samonimNull'></td>
+                </tr>
+                <tr>
+                    <th>Piggy</th>
+                    <td id='piggy'></td>
+                    <td id='piggyNull'></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</body>
+
+</html>
+
+<!--
+    <button type='button' class='btn btn-info m-1'>Weekday</button>
+    <button type='button' class='btn btn-info m-1'>Weekend</button>
+    <button type='button' class='btn btn-info m-1'>Refresh</button>
+-->
